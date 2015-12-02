@@ -30,17 +30,23 @@ static char UIScrollViewSpringHeadView;
     self.contentInset = UIEdgeInsetsMake(view.bounds.size.height, 0, 0, 0);
     [self addSubview:view];
     view.frame = CGRectMake(0, -view.bounds.size.height, view.bounds.size.width, view.bounds.size.height);
-    self.delegate = self;
     self.topView = view;
+    //使用kvo监听scrollView的滚动
+    [self addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    [self scrollViewDidScroll:self];
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offy = scrollView.contentOffset.y;
     
     if (offy < 0) {
         self.topView.frame = CGRectMake(0, offy, self.topView.bounds.size.width, -offy);
-    }}
+    }
+}
 
 
 @end
