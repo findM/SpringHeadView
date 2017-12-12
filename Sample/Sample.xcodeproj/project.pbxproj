@@ -12,7 +12,6 @@
 		95E224951C0DB53A0075CC96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E224941C0DB53A0075CC96 /* ViewController.m */; };
 		95E2249A1C0DB53A0075CC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E224991C0DB53A0075CC96 /* Assets.xcassets */; };
 		95E2249D1C0DB53A0075CC96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E2249B1C0DB53A0075CC96 /* LaunchScreen.storyboard */; };
-		95E224A61C0DB5530075CC96 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E224A51C0DB5530075CC96 /* UIView+Positioning.m */; };
 		95E224A91C0E03D70075CC96 /* UIScrollView+SpringHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E224A81C0E03D70075CC96 /* UIScrollView+SpringHeadView.m */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +25,6 @@
 		95E224991C0DB53A0075CC96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95E2249C1C0DB53A0075CC96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95E2249E1C0DB53A0075CC96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95E224A41C0DB5530075CC96 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
-		95E224A51C0DB5530075CC96 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
 		95E224A71C0E03D70075CC96 /* UIScrollView+SpringHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SpringHeadView.h"; sourceTree = "<group>"; };
 		95E224A81C0E03D70075CC96 /* UIScrollView+SpringHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SpringHeadView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +59,6 @@
 		95E2248C1C0DB53A0075CC96 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				95E224A41C0DB5530075CC96 /* UIView+Positioning.h */,
-				95E224A51C0DB5530075CC96 /* UIView+Positioning.m */,
 				95E224901C0DB53A0075CC96 /* AppDelegate.h */,
 				95E224911C0DB53A0075CC96 /* AppDelegate.m */,
 				95E224931C0DB53A0075CC96 /* ViewController.h */,
@@ -158,7 +153,6 @@
 				95E224951C0DB53A0075CC96 /* ViewController.m in Sources */,
 				95E224A91C0E03D70075CC96 /* UIScrollView+SpringHeadView.m in Sources */,
 				95E224921C0DB53A0075CC96 /* AppDelegate.m in Sources */,
-				95E224A61C0DB5530075CC96 /* UIView+Positioning.m in Sources */,
 				95E2248F1C0DB53A0075CC96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +292,7 @@
 				95E224A31C0DB53A0075CC96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

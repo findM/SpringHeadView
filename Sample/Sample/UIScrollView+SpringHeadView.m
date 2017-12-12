@@ -48,5 +48,8 @@ static char UIScrollViewSpringHeadView;
     }
 }
 
+- (void)dealloc{
+    [self removeObserver:self forKeyPath:@"contentOffset"];
+}
 
 @end
